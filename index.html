@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StreamFix</title>
+
+    <!--Importing Roboto Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Importing FontAwesome-->
+    <script src="https://kit.fontawesome.com/c836f0ce7a.js" crossorigin="anonymous"></script>
+    
+    <!--Linking CSS files-->
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/heroSection.css">
+    
 </head>
 <body>
-    
+    <header>
+
+        <nav>
+
+            <div class="mobile">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/Streamfit Logo.png" alt=""></a>
+                </div>
+                
+                <div class="bars">
+                    <i class="fa-solid fa-bars" onclick="myFunction()"></i>
+                </div>
+            </div>
+            
+            <div class="desktop">
+                <ul>
+                    <a href="#" class="active"><li>Home</li></a>
+                    <a href="#"><li>Movies</li></a>
+                    <a href="#"><li>TV Shows</li></a>
+                    <a href="#"><li>Web Series</li></a>
+                    <a href="#"><li>Premium</li></a>
+                </ul>
+
+                <div class="button">
+                    <button type="submit">Sign up</button>
+                </div>
+            </div>
+            
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="heroSection">
+            <div class="heroText">
+                <h1>STREAMFIX</h1>
+                <h3>Unlimited Entertainment: <span>Movies, TV Shows & More</span></h3>
+                <button><img src="./images/play icon.png" alt="">PLAY NOW</button>
+            </div>
+
+            <div class="heroImages">
+                <img src="./images/heroImage.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!--Linking JS files-->
+    <script src="./JavaScript/nav.js"></script>
 </body>
 </html>

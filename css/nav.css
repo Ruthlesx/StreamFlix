@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    font-family: 'Roboto';
+    background-color: #090909;
+}
+
+header{
+    width: 90%;
+    margin: auto auto 30px;
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    width: 215px;
+    margin: 20px 20px 0 0;
+}
+
+.logo img{
+    width: 90%;
+    cursor: pointer;
+}
+
+.bars{
+    display: none;
+}
+
+.bars i{
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.desktop{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 150px 0 0;
+}
+
+a{
+    text-decoration: none;
+    color: #cccccc;
+    margin: auto;
+}
+
+.active{
+    color: #FF00B8;
+}
+
+a:hover{
+    color: #FF00B8;
+}
+
+li{
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.button{
+    margin: auto;
+    align-self: right;
+}
+
+.button button{
+    margin-top: 20px;
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1.4px solid #FF00B8;
+    border-radius: 50px;
+    font-size: 18.57px;
+    font-weight: 500;
+    line-height: 21.76px;
+    text-align: center;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #FF00B8;
+}
+
+@media(max-width:1234px){
+    ul{
+        margin: 10px 90px 0 0;
+    }
+
+}
+
+@media(max-width:1167px){
+    .button{
+        display: none;
+    }
+
+    ul{
+        margin: 10px 0 0;
+    }
+
+}
+
+@media(max-width:900px){
+    nav{
+        flex-direction: column;
+        padding-bottom: 75px;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        width: 70%;
+    }
+
+    .bars{
+        display: block;
+        margin: auto 0;
+        padding: 20px 0;
+    }
+
+    .desktop{
+        flex-direction: column;
+        display: none;
+    }
+
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0 20px -35px;
+        text-align: center;
+    }
+
+    li{
+        padding: 20px 0;
+    }
+
+    .button{
+        display: block;
+    }
+
+    .button button{
+        padding: 10px 70px;
+    }
+
+}
