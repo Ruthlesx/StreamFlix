@@ -1,21 +1,43 @@
-body{
+:root{
+    --clr-100dark: #090909;
+    --clr-90dark: #121010;
+    --clr-80dark: #2E2D2D;
+    --clr-grey: #454545;
+    --clr-ash: #CCCCCC;
+    --clr-80light: #CFCFCF;
+    --clr-90light: #F8F7F7;
+    --clr-magenta: #ff00b3;
+}
+
+*,
+*::before,
+*::after{
     margin: 0;
-    font-family: 'Roboto';
-    background-color: #090909;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    background-color: var(--clr-100dark);
 }
 
 header{
-    width: 90%;
-    margin: auto auto 30px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1rem;
 }
 
 nav{
+    width: 100%;
     display: flex;
+    padding-inline: 5%;
+    justify-content: space-between;
 }
 
 .logo{
-    width: 215px;
-    margin: 20px 20px 0 0;
+    flex-basis: 5%;
+    padding-top: 20px;
 }
 
 .logo img{
@@ -27,34 +49,26 @@ nav{
     display: none;
 }
 
-.bars i{
-    color: #cccccc;
-    cursor: pointer;
-}
-
 .desktop{
     display: flex;
-    justify-content: space-between;
+    align-items: baseline;
+    gap: 8rem;
 }
 
 ul{
     display: flex;
     justify-content: space-between;
-    margin: 10px 150px 0 0;
+    gap: 24px;
 }
 
 a{
     text-decoration: none;
-    color: #cccccc;
+    color: var(--clr-ash);
     margin: auto;
 }
 
-.active{
-    color: #FF00B8;
-}
-
 a:hover{
-    color: #FF00B8;
+    color: var(--clr-magenta);
 }
 
 li{
@@ -66,27 +80,22 @@ li{
     text-align: center;
 }
 
-.button{
-    margin: auto;
-    align-self: right;
-}
-
 .button button{
     margin-top: 20px;
     padding: 10px 35px;
     background-color: transparent;
-    border: 1.4px solid #FF00B8;
+    border: 1.4px solid var(--clr-magenta);
     border-radius: 50px;
     font-size: 18.57px;
     font-weight: 500;
     line-height: 21.76px;
     text-align: center;
-    color: #cccccc;
+    color: var(--clr-ash);
     cursor: pointer;
 }
 
 button:hover{
-    color: #FF00B8;
+    color: var(--clr-magenta);
 }
 
 @media(max-width:1234px){
@@ -126,6 +135,11 @@ button:hover{
         display: block;
         margin: auto 0;
         padding: 20px 0;
+    }
+
+    .bars i{
+        color: var(--clr-ash);
+        cursor: pointer;
     }
 
     .desktop{

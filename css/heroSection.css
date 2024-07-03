@@ -1,36 +1,57 @@
-main{
-    width: 100%;
+:root{
+    --clr-100dark: #090909;
+    --clr-90dark: #121010;
+    --clr-80dark: #2E2D2D;
+    --clr-grey: #454545;
+    --clr-ash: #CCCCCC;
+    --clr-80light: #CFCFCF;
+    --clr-90light: #F8F7F7;
+    --clr-magenta: #ff00b3;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
 
 .heroSection{
     width: 90%;
-    margin: auto;
+    height: 492px;
+    margin: 4rem auto 0;
     display: flex;
 }
 
 .heroText{
-    flex-basis: 34%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
     margin: auto;
+    gap: 12px;
+    text-align: left;
 }
 
 .heroText h1{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 70.31px;
     text-align: left;
-    color: #FF00B8;
+    color: var(--clr-magenta);
 }
 
-.heroText h3{
+.heroText p{
     font-size: 32px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 46.88px;
     text-align: left;
-    color: #F8F7F7;
+    color: var(--clr-90light);
 }
 
-.heroText h3 span{
-    color: #cccccc;
+.heroText p span{
+    color: var(--clr-ash);
 }
 
 .heroImages{
@@ -43,15 +64,18 @@ main{
 }
 
 .heroText button{
+    width: 160px;
+    margin-top: 3rem;
     padding: 10px 20px;
     background-color: transparent;
-    border: 1.4px solid #FF00B8;
+    border: 1.4px solid var(--clr-magenta);
     border-radius: 50px;
-    color: #cccccc;
+    color: var(--clr-ash);
     font-size: 18.57px;
     font-weight: 700;
     line-height: 21.76px;
     text-align: center;
+    cursor: pointer;
 }
 
 .heroText button img{
