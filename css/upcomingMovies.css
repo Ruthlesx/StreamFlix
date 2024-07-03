@@ -20,12 +20,11 @@
 
 .upcoming{
     width: 100%;
-    height: 100vh;
-    padding: 5rem 5%;
+    padding: 5rem 5% 2rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    background: linear-gradient( rgba(0, 14, 22, 0.274), rgba(0, 160, 252, 0.555), rgba(0, 31, 49, 0.438)), url(../assets/images/BG\ image.png);
+    background-image: url(../assets/images/BG\ image.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,8 +37,11 @@
 
 .movies h2{
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
     color: var(--clr-magenta);
+    margin: auto 0;
 }
 
 .upcoming-buttons{
@@ -50,14 +52,21 @@
 .upcoming-buttons button{
     padding: 10px 35px;
     border-radius: 30px;
-    border: 2px solid var(--clr-magenta);
+    border: none;
     background-color: var(--clr-100dark);
-    color: var(--clr-ash);
+    color: var(--clr-90light);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+
+.upcoming-buttons .activeButton{
+    border: 1px solid var(--clr-90light) !important;
 }
 
 .upcoming-cards{
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .card, .card-info{
@@ -76,13 +85,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
-    font-weight: 600;
     color: var(--clr-ash);
-}
-
-.movie-info span{
-    color: var(--clr-magenta);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
 }
 
 .time-ratings{
@@ -95,11 +102,15 @@
 }
 
 .time img{
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
 }
 
 .time span{
-    font-size: 10px;
-    color: var(--clr-ash);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: var(--clr-90light);
+    margin: auto 2px auto 5px;
 }

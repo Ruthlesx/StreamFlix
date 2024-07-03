@@ -1,43 +1,21 @@
-:root{
-    --clr-100dark: #090909;
-    --clr-90dark: #121010;
-    --clr-80dark: #2E2D2D;
-    --clr-grey: #454545;
-    --clr-ash: #CCCCCC;
-    --clr-80light: #CFCFCF;
-    --clr-90light: #F8F7F7;
-    --clr-magenta: #ff00b3;
-}
-
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-}
-
 body{
-    background-color: var(--clr-100dark);
+    margin: 0;
+    font-family: 'Roboto';
+    background-color: #090909;
 }
 
 header{
-    width: 100%;
-    height: 100vh;
-    padding-top: 1rem;
+    width: 90%;
+    margin: auto auto 30px;
 }
 
 nav{
-    width: 100%;
     display: flex;
-    padding-inline: 5%;
-    justify-content: space-between;
 }
 
 .logo{
-    flex-basis: 5%;
-    padding-top: 20px;
+    width: 215px;
+    margin: 20px 20px 0 0;
 }
 
 .logo img{
@@ -49,26 +27,34 @@ nav{
     display: none;
 }
 
+.bars i{
+    color: #cccccc;
+    cursor: pointer;
+}
+
 .desktop{
     display: flex;
-    align-items: baseline;
-    gap: 8rem;
+    justify-content: space-between;
 }
 
 ul{
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    margin: 10px 150px 0 0;
 }
 
 a{
     text-decoration: none;
-    color: var(--clr-ash);
+    color: #cccccc;
     margin: auto;
 }
 
+.active{
+    color: #FF00B8;
+}
+
 a:hover{
-    color: var(--clr-magenta);
+    color: #FF00B8;
 }
 
 li{
@@ -80,22 +66,27 @@ li{
     text-align: center;
 }
 
+.button{
+    margin: auto;
+    align-self: right;
+}
+
 .button button{
     margin-top: 20px;
     padding: 10px 35px;
     background-color: transparent;
-    border: 1.4px solid var(--clr-magenta);
+    border: 1.4px solid #FF00B8;
     border-radius: 50px;
     font-size: 18.57px;
     font-weight: 500;
     line-height: 21.76px;
     text-align: center;
-    color: var(--clr-ash);
+    color: #cccccc;
     cursor: pointer;
 }
 
 button:hover{
-    color: var(--clr-magenta);
+    color: #FF00B8;
 }
 
 @media(max-width:1234px){
@@ -135,11 +126,6 @@ button:hover{
         display: block;
         margin: auto 0;
         padding: 20px 0;
-    }
-
-    .bars i{
-        color: var(--clr-ash);
-        cursor: pointer;
     }
 
     .desktop{
