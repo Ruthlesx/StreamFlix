@@ -1,7 +1,7 @@
 .newlySuggested{
     padding: 3rem 0 2rem;
     width: 90%;
-    margin: auto;
+    margin: auto auto 3rem;
 }
 
 .newlySuggested h1{
