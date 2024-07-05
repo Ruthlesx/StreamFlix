@@ -114,3 +114,7 @@
     color: var(--clr-90light);
     margin: auto 2px auto 5px;
 }
+
+@media(max-width:900px){
+   
+}

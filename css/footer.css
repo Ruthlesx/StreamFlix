@@ -6,18 +6,19 @@
 
 .footerBackground{
     width: 100%;
-    background-color: #00222C;
 }
 
 .streamfixSocials{
-    width: 90%;
+    padding: 0 5% 4rem;
     margin: auto;
     text-align: center;
+    background-color: #00222C;
+    border-radius: 0 0 100px 100px;
 }
   
 .streamfixSocials h1{
     font-family: 'Circular Spotify Text';
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 60px;
     padding: 3rem 0;
@@ -32,11 +33,11 @@
 
 .streamfixSocialsButtons{
     width: 90%;
-    margin: auto;
+    margin: 0 auto 3rem;
 }
 
 .streamfixSocialsButtons button{
-    padding: 20px 24px;
+    padding: 20px 20px;
     border-radius: 50px;
     border: 1px;
     background-color: #F8F7F7;
@@ -47,9 +48,106 @@
     line-height: 18px;
     letter-spacing: 0.008em;
     text-align: right;
+    margin-right: 20px;
 }
 
 .streamfixSocialsButtons button img{
+    width: 20px;
+    margin: 0 15px -3px 0;
+}
+
+.appleIconButton{
+    padding: 18px 20px !important;
+}
+
+.appleIcon{
+    width: 24px !important;
+}
+
+.noIconButton{
+    background-color: transparent !important;
+    border: 2px solid #F8F7F7 !important;
+    color: #F8F7F7 !important;
+    padding: 20px 30px !important
+}
+
+.regionSocials{
+    display: flex;
+    justify-content: space-between;
+}
+
+.region{
+    flex-basis: 18%;
+    display: flex;
+    gap: 5px;
+}
+
+.region img{
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.region .regionIcon2{
+    width: 15px;
+    height: 8px;
+    margin-top: 5px;
+}
+
+.region p{
+    font-family: 'Circular Spotify Text';
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #F8F7F7;
+    margin-right: 10px;
+}
+
+.socialIcons{
+    display: flex;
+    gap: 25px;
+}
+
+.logoLinks{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0;
+}
+
+.links{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.links p{
+    width: 22%;
+    margin: 0 auto 8px;
+    font-family: 'Circular Spotify Text';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #F8F7F7;
+}
+
+.copyright{
+    padding: 10px 5% 5rem;
+    display: flex;
+    gap: 10px;
+}
+
+.copyright img{
     width: 24px;
-    margin: 0 15px -7px 0;
+    height: 24px;
+}
+
+.copyright p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color: #F8F7F7;
 }
