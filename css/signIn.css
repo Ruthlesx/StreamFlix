@@ -324,6 +324,11 @@ select{
 
 @media (max-width:800px){
 
+    .signIn p{
+        line-height: 30px;
+        padding-top: 8px;
+    }
+
     .signIn-cards{
         flex-direction: column;
     }
