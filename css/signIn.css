@@ -20,6 +20,7 @@
 }
 
 body{
+    background-color: (--clr-armygreen);
     background: linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)), url(../assets/images/BG\ image.png);
     background-position: center;
     background-size: cover;
@@ -56,7 +57,7 @@ nav img{
     font-weight: 500;
     line-height: 21.76px;
     text-align: center;
-    color: #cccccc;
+    color: var(--clr-ash);
     cursor: pointer;
 }
 
@@ -97,6 +98,9 @@ form{
     padding: 2rem;
     text-align: left;
     color: var(--clr-90light);
+    font-family: "Imprima", sans-serif;
+    font-style: normal;
+    opacity: 96%;
 }
 
 .input-group{
@@ -108,12 +112,14 @@ form{
 
 label{
     font-size: 16px;
+    font-weight: 400;
 }
 
 input{
     padding: 1rem 2.5rem 1rem 1.5rem;
     border-radius: 30px;
     border: none;
+    font-weight: 400;
 }
 
 .input-group img{
@@ -125,6 +131,7 @@ input{
 
 form a{
     color: var(--clr-90light);
+    font-weight: 400;
 }
 
 form .button{
@@ -189,9 +196,13 @@ footer{
     color: var(--clr-90light);
 }
 
-.footer-one span{
+.footer-one h2 a{
     color: var(--clr-magenta);
-    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-one h2 a:hover{
+    text-decoration: underline;
 }
 
 .footer-buttons{
@@ -202,16 +213,18 @@ footer{
     align-items: center;
 }
 
-.android{
+.android a{
     display: flex;
     background: var(--clr-90light);
     padding: 8px 13px;
     border-radius: 40px;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
+    color: var(--clr-100dark);
 }
 
-.android:hover{
+.android a:hover{
     background: transparent;
     border: 2px solid var(--clr-90light);
     color: var(--clr-90light);
@@ -311,6 +324,11 @@ select{
 
 @media (max-width:800px){
 
+    .signIn p{
+        line-height: 30px;
+        padding-top: 8px;
+    }
+
     .signIn-cards{
         flex-direction: column;
     }
@@ -322,6 +340,10 @@ select{
     
     label{
         font-size: 14px;
+    }
+
+    form a{
+        font-size: 12px;
     }
     
     .signIn-logo{
