@@ -213,6 +213,7 @@ footer{
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
+    color: var(--clr-100dark);
 }
 
 .android a:hover{
