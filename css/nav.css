@@ -36,12 +36,15 @@ nav{
 .desktop{
     display: flex;
     flex-direction: row !important;
-    gap: 100px;
+    width: 100%;
+    gap: 10%;
+    margin: auto;
 }
 
 .desktop ul{
     display: flex;
     flex-direction: row !important;
+    flex-basis: 70%;
 }
 
 a{
@@ -73,7 +76,7 @@ li{
 }
 
 .button button{
-    margin-top: 20px;
+    margin-top: 7px;
     padding: 10px 30px;
     background-color: transparent;
     border: 1.4px solid #FF00B8;
@@ -90,35 +93,18 @@ button:hover{
     color: #FF00B8;
 }
 
-@media(max-width:1120px){
-    ul{
-        margin: 10px 50px 0 0;
+@media(max-width:1150px){
+    .desktop{
+        gap: 7%;
     }
 
     li{
-        font-size: 16px;
-        padding: 20px 18px;
+        font-size: 15px;
+        padding: 20px 10px;
     }
 
     .button button{
-        font-size: 16px;
-        padding: 10px 28px;
-    }
-
-}
-
-@media(max-width:1110px){
-    ul{
-        margin: 10px 0 0;
-    }
-
-    li{
-        font-size: 14px;
-        padding: 20px 15px;
-    }
-
-    .button button{
-        font-size: 14px;
+        font-size: 15px;
         padding: 10px 35px;
     }
 
@@ -126,8 +112,7 @@ button:hover{
 
 @media(max-width:900px){
     nav{
-        flex-direction: column;
-        padding-bottom: 75px;
+        flex-direction: column; 
     }
 
     .mobile{
@@ -169,6 +154,7 @@ button:hover{
     .button{
         display: flex;
         justify-content: center;
+        padding-bottom: 50px;
     }
 
     .button button{

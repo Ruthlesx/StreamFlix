@@ -9,7 +9,7 @@
 }
 
 .streamfixSocials{
-    padding: 0 5% 4rem;
+    padding: 0 5% 3rem;
     margin: auto;
     text-align: center;
     background-color: #00222C;
@@ -18,10 +18,10 @@
   
 .streamfixSocials h1{
     font-family: 'Circular Spotify Text';
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 60px;
-    padding: 3rem 0;
+    padding: 2rem 0 1rem;
     letter-spacing: -0.008em;
     text-align: center;
     color: #F8F7F7;
@@ -33,11 +33,11 @@
 
 .streamfixSocialsButtons{
     width: 90%;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2.5rem;
 }
 
 .streamfixSocialsButtons button{
-    padding: 20px 20px;
+    padding: 15px;
     border-radius: 50px;
     border: 1px;
     background-color: #F8F7F7;
@@ -57,7 +57,7 @@
 }
 
 .appleIconButton{
-    padding: 18px 20px !important;
+    padding: 13px 15px !important;
 }
 
 .appleIcon{
@@ -66,9 +66,9 @@
 
 .noIconButton{
     background-color: transparent !important;
-    border: 2px solid #F8F7F7 !important;
+    border: 1px solid #F8F7F7 !important;
     color: #F8F7F7 !important;
-    padding: 20px 30px !important
+    padding: 14px 20px !important
 }
 
 .regionSocials{
@@ -83,29 +83,31 @@
 }
 
 .region img{
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
 }
 
-.region .regionIcon2{
-    width: 15px;
-    height: 8px;
-    margin-top: 5px;
-}
-
-.region p{
-    font-family: 'Circular Spotify Text';
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    color: #F8F7F7;
-    margin-right: 10px;
+select{
+    margin-left: -5px;
+    font-size: 15px;
+    background: #00222C;
+    border: none;
+    color: var(--clr-90light);
+    padding: 0.3rem;
 }
 
 .socialIcons{
     display: flex;
+    height: 20px;
     gap: 25px;
+    margin-top: 10px;
+}
+
+.socialIcons img:hover{
+    border: 1px solid var(--clr-90light);
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .logoLinks{
@@ -126,7 +128,7 @@
     width: 22%;
     margin: 0 auto 8px;
     font-family: 'Circular Spotify Text';
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
@@ -134,7 +136,7 @@
 }
 
 .copyright{
-    padding: 10px 5% 5rem;
+    padding: 10px 5% 3rem;
     display: flex;
     gap: 10px;
 }
@@ -145,9 +147,80 @@
 }
 
 .copyright p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 23.44px;
     text-align: left;
     color: #F8F7F7;
+}
+
+@media(max-width:960px){
+    .streamfixSocialsButtons{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:900px){
+    .streamfixSocials{
+        border-radius: 0 0 50px 50px;
+    }
+
+    .streamfixSocials h1{
+        font-size: 25px;
+        line-height: 40px;
+        padding: 2rem 0 1rem;
+    }
+
+    .streamfixSocialsButtons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .streamfixSocialsButtons button{
+        margin-top: 20px;
+    }
+
+    .logoLinks{
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .links p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width:600px){
+    .streamfixSocials h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .streamfixSocialsButtons button{
+        font-size: 11px;
+    }
+
+    .regionSocials{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 2rem !important;
+    }
+
+    .links p{
+        width: 45%;
+    }
+
+    .copyright img{
+        width: 22px;
+        height: 22px;
+    }
+    
+    .copyright p{
+        font-size: 15px;
+    }
 }

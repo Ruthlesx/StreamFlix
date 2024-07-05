@@ -24,7 +24,7 @@
 
 .newlySuggestedMovies img{
     width: 11%;
-    border-radius: 7px;
+    border-radius: 10px;
     margin-bottom: 3rem;
 }
 
@@ -51,4 +51,52 @@
 .newlyActive{
     background-color: #F8F7F7 !important;
     color: #FF00B8 !important;
+}
+
+@media(max-width:900px){
+    .newlySuggested{
+        margin-bottom: 2rem;
+    }
+
+    .newlySuggested h1{
+        font-size: 25px;
+        margin-bottom: 2rem;
+    }
+
+    .newlySuggestedMovies img{
+        width: 22%;
+        margin-bottom: 2rem;
+    }
+
+    .newlySuggestedPages{
+        gap: 15px;
+    }
+
+
+    .newlySuggestedPages p{
+        width: 40px;
+        height: 40px;
+        padding: 5.98px;
+        font-size: 26.32px;
+        line-height: 30.48px;
+    }
+
+}
+
+@media(max-width:500px){
+    .newlySuggested{
+        margin-bottom: 1rem;
+    }
+
+    .newlySuggestedPages{
+        gap: 10px;
+    }
+
+    .newlySuggestedPages p{
+        width: 30px;
+        height: 30px;
+        padding: 4.49px;
+        font-size: 19.74px;
+        line-height: 22.86px;
+    }
 }
