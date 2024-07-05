@@ -176,10 +176,11 @@ select{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
     }
     
     .streamfixSocialsButtons button{
-        margin-top: 20px;
+        margin-right: 0;
     }
 
     .logoLinks{
