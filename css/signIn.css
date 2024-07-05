@@ -192,9 +192,13 @@ footer{
     color: var(--clr-90light);
 }
 
-.footer-one span{
+.footer-one h2 a{
     color: var(--clr-magenta);
-    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-one h2 a:hover{
+    text-decoration: underline;
 }
 
 .footer-buttons{
