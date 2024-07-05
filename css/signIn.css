@@ -205,16 +205,17 @@ footer{
     align-items: center;
 }
 
-.android{
+.android a{
     display: flex;
     background: var(--clr-90light);
     padding: 8px 13px;
     border-radius: 40px;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
 }
 
-.android:hover{
+.android a:hover{
     background: transparent;
     border: 2px solid var(--clr-90light);
     color: var(--clr-90light);
