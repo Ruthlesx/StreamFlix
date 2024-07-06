@@ -29,11 +29,19 @@
 
 .streamfixSocials h1 a{
     color: #FF00B8;
+    text-decoration: none;
+    font-family: 'Circular Spotify Text';
 }
 
 .streamfixSocialsButtons{
     width: 90%;
     margin: 0 auto 2.5rem;
+}
+
+.streamfixSocialsButtons a{
+    text-decoration: none;
+    color: #F8F7F7 !important;
+    font-family: 'Circular Spotify Text';
 }
 
 .streamfixSocialsButtons button{
@@ -89,6 +97,7 @@
 }
 
 select{
+    font-family: 'Circular Spotify Text';
     margin-left: -5px;
     font-size: 15px;
     background: #00222C;
@@ -147,6 +156,7 @@ select{
 }
 
 .copyright p{
+    font-family: 'Circular Spotify Text';
     font-size: 18px;
     font-weight: 400;
     line-height: 23.44px;
