@@ -84,12 +84,9 @@ main, .signIn{
 
 }
 
-.signIn-cards{
-    display: flex;
-}
-
 form{
-    width: 50%;
+    width: 60%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -163,25 +160,6 @@ form .button{
     color: var(--clr-90light);
     text-decoration: underline;
     transition: ease-in-out 0.3s;
-}
-
-.signIn-logo{
-    width: 50%;
-    background: var(--clr-100dark);
-    display: flex;
-    flex-direction: column;
-    padding-top: 8%;
-}
-
-.signIn-logo img{
-    width: 40%;
-    margin: 2rem auto 0.5rem;
-}
-
-.signIn-logo p{
-    color: var(--clr-90light);
-    font-size: 50px;
-    font-weight: 600;
 }
 
 footer{
@@ -344,12 +322,8 @@ select{
         padding-top: 8px;
     }
 
-    .signIn-cards{
-        flex-direction: column;
-    }
-
     form{
-        width: 100%;
+        width: 80%;
         gap: 2rem;
     }
     
