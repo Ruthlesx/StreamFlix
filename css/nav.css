@@ -13,6 +13,8 @@ header{
     z-index: 1;
 }
 
+/*Before sign in Navbar*/
+
 nav{
     width: 90%;
     margin: auto;
@@ -99,6 +101,40 @@ button:hover{
     color: #FF00B8;
 }
 
+
+
+/*After sign-in Navbar*/
+
+.moviesNav{
+    width: 95%;
+}
+
+.movieMobile{
+    display: flex;
+    gap: 0;
+}
+
+.bar{
+    margin: auto 0;
+}
+
+.bar img{
+    cursor: pointer;
+    width: 50px;
+}
+
+.moviesButton{
+    display: flex;
+    gap: 25px;
+    margin: auto;
+}
+
+.moviesButton img{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
 @media(max-width:1150px){
     .desktop{
         gap: 7%;
@@ -152,6 +188,10 @@ button:hover{
         text-align: center;
     }
 
+    .moviesUl{
+        display: none !important;
+    }
+
     li{
         font-size: 18px;
         padding: 20px;
@@ -160,12 +200,46 @@ button:hover{
     .button{
         display: flex;
         justify-content: center;
-        padding-bottom: 50px;
     }
 
     .button button{
         padding: 10px 70px;
+        margin-bottom: 50px;
         font-size: 19px;
+    }
+
+
+
+    /*After sign in Responsive Navbar*/
+
+    .moviesHeader{
+        padding-bottom: 1.5rem;
+    }
+
+    .moviesNav{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .movieMobile .logo {
+        width: 120px;
+    }
+
+    .moviesDesktop{
+        display: flex !important;
+        justify-content: right;
+        margin: 20px 20px 0 0;
+    }
+
+    .moviesButton{
+        margin: auto 0 !important;
+        gap: 15px;
+    }
+
+    .moviesButton img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
     }
 
 }
