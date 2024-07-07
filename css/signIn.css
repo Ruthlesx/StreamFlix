@@ -129,6 +129,7 @@ input{
 
 form a{
     color: var(--clr-90light);
+    display: inline-block;
     font-family: 'Imprima';
     font-size: 18px;
     font-weight: 400;
@@ -335,8 +336,8 @@ select{
         font-size: 12px;
     }
 
-    .signUp a{
-    font-size: 12px;
+    .signUp p, .signUp a{
+    font-size: 13px;
     }
 
     .footer-one h2{
