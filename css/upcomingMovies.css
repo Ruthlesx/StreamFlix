@@ -165,7 +165,7 @@
 .slide-left:hover,
 .slide-right:hover {
   background-color: var(--clr-grey) ;
-}s
+}
 
 
 @media(max-width:900px){

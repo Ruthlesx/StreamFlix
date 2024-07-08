@@ -433,12 +433,6 @@ button:hover{
 }
 
 
-
-
-
-
-
-=======
 /*After sign-in Navbar*/
 
 .moviesNav{
@@ -511,7 +505,7 @@ main{
 
   .bars{
       display: block;
-      margin: auto 0;
+      margin: 0;
       padding: 20px 0;
   }
 
@@ -539,62 +533,11 @@ main{
   .button{
       display: flex;
       justify-content: center;
-      padding-bottom: 50px;
   }
-
-  .button button{
-      padding: 10px 70px;
-      font-size: 19px;
-  }
-=======
-    nav{
-        flex-direction: column; 
-    }
-
-    .mobile{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo img{
-        width: 70%;
-    }
-
-    .bars{
-        display: block;
-        margin: auto 0;
-        padding: 20px 0;
-    }
-
-    .desktop{
-        display: none;
-    }
-
-    .desktop.responsive{
-        flex-direction: column;
-        display: none;
-    }
-
-    ul{
-        flex-direction: column;
-        justify-content: center;
-        margin: 10px 0;
-        text-align: center;
-    }
 
     .moviesUl{
         display: none !important;
-    }
-
-    li{
-        font-size: 18px;
-        padding: 20px;
-    }
-
-    .button{
-        display: flex;
-        justify-content: center;
-    }
+    } 
 
     .button button{
         padding: 10px 70px;
