@@ -4,6 +4,11 @@
     margin: auto auto 3rem;
 }
 
+.popularMovies{
+    margin-bottom: 1rem !important;
+}
+
+
 .newlySuggested h1{
     font-size: 32px;
     font-weight: 700;

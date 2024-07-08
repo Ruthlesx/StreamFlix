@@ -88,6 +88,8 @@ header{
   z-index: 1;
 }
 
+/*Before sign in Navbar*/
+
 nav{
   width: 90%;
   margin: auto;
@@ -405,8 +407,6 @@ button:hover{
 }
 
 
-
-
 .sidebar-footer {
   border-block-start: 1px solid var(--banner-background);
   padding-block-start: 28px;
@@ -438,6 +438,44 @@ button:hover{
 
 
 
+=======
+/*After sign-in Navbar*/
+
+.moviesNav{
+    width: 95%;
+}
+
+.movieMobile{
+    display: flex;
+    gap: 0;
+}
+
+.bar{
+    margin: auto 0;
+}
+
+.bar img{
+    cursor: pointer;
+    width: 50px;
+}
+
+.moviesButton{
+    display: flex;
+    gap: 25px;
+    margin: auto;
+}
+
+.moviesButton img{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+main{
+    width: 100%;
+    margin-top: 100px;
+}
+
 
 @media(max-width:1150px){
   .desktop{
@@ -457,6 +495,7 @@ button:hover{
 }
 
 @media(max-width:900px){
+
   nav{
       flex-direction: column; 
   }
@@ -507,5 +546,94 @@ button:hover{
       padding: 10px 70px;
       font-size: 19px;
   }
+=======
+    nav{
+        flex-direction: column; 
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        width: 70%;
+    }
+
+    .bars{
+        display: block;
+        margin: auto 0;
+        padding: 20px 0;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .desktop.responsive{
+        flex-direction: column;
+        display: none;
+    }
+
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .moviesUl{
+        display: none !important;
+    }
+
+    li{
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button button{
+        padding: 10px 70px;
+        margin-bottom: 50px;
+        font-size: 19px;
+  }
+
+
+
+    /*After sign in Responsive Navbar*/
+
+    .moviesHeader{
+        padding-bottom: 1.5rem;
+    }
+
+    .moviesNav{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .movieMobile .logo {
+        width: 120px;
+    }
+
+    .moviesDesktop{
+        display: flex !important;
+        justify-content: right;
+        margin: 20px 20px 0 0;
+    }
+
+    .moviesButton{
+        margin: auto 0 !important;
+        gap: 15px;
+    }
+
+    .moviesButton img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
 
 }
