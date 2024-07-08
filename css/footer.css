@@ -1,31 +1,10 @@
-:root{
-    --clr-100dark: #090909;
-    --clr-90dark: #121010;
-    --clr-80dark: #2E2D2D;
-    --clr-grey: #454545;
-    --clr-ash: #CCCCCC;
-    --clr-80light: #CFCFCF;
-    --clr-90light: #F8F7F7;
-    --clr-magenta: #ff00b3;
-    --clr-armygreen: #00222C;
-}
-
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-}
-
 @font-face {
     font-family: 'Circular Spotify Text';
     src: url('../assets/fonts/circular-spotify-text-font/CircularSpotifyText-Book.otf');
      
 }
 
-main
+footer{
     width: 100%;
     background-color: #090909;
 }
@@ -270,4 +249,4 @@ select{
     .copyright p{
         font-size: 15px;
     }
-} 
+}
