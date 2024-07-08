@@ -60,7 +60,7 @@
 
 .foreignShows{
     display: flex;
-    gap: 2%;
+    gap: 1%;
     margin-bottom: 2rem;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .playVideo{
-    flex-basis: 73%;
+    flex-basis: 65%;
     height: auto;
     background-color: #454545;
     display: flex;
@@ -85,6 +85,10 @@
     width: 57px;
     height: 48px;
     margin-top: 160px;
+}
+
+.trendingForeignText{
+    width: 90%;
 }
 
 .trendingForeignText p{
@@ -101,7 +105,7 @@
     line-height: 36.33px;
     text-align: left;
     color: #FFFFFF;
-    margin: 3rem 7% 5rem;
+    padding: 3rem 7% 5rem;
 }
 
 @media(max-width:1000px){
