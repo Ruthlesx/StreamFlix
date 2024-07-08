@@ -33,7 +33,7 @@ export function createMovieCard(movie) {
                             <img src="assets/HD tag.png" alt="HD resolution">
                             <div class="time-ratings">
                                 <div class="time">
-                                    <img src="assets/clock icon.png" alt="movie length">
+                                    <img src="assets/clock-icon.png" alt="movie length">
                                     <span>120min</span>
                                 </div>
                                 <div class="time">

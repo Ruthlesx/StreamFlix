@@ -25,6 +25,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.5%;
+    overflow: scroll;
 }
 
 .newlySuggestedMovies img{
