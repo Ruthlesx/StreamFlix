@@ -3,6 +3,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  
 }
 
 .heroText{
@@ -50,11 +51,13 @@
 .heroImages{
   display: flex;
   flex-basis: 70%;
+  
 }
 
 .heroImages img{
   width: 100%;
   height: auto;
+ 
 }
 
 .banner {

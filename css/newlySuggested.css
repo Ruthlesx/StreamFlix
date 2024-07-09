@@ -54,6 +54,12 @@
     color: #090909;
 }
 
+.card, .card-info{
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+
 .newlyActive{
     background-color: #F8F7F7 !important;
     color: #FF00B8 !important;
