@@ -25,6 +25,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.5%;
+    overflow: scroll;
 }
 
 .newlySuggestedMovies img{
@@ -51,6 +52,12 @@
     text-align: center;
     background-color: #454545;
     color: #090909;
+}
+
+.card, .card-info{
+    margin-right: 10px;
+    margin-bottom: 20px;
+
 }
 
 .newlyActive{

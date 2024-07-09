@@ -49,11 +49,13 @@
 .heroImages{
   display: flex;
   flex-basis: 70%;
+  
 }
 
 .heroImages img{
   width: 100%;
   height: auto;
+ 
 }
 
 .banner {

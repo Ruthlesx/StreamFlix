@@ -30,14 +30,14 @@ export function createMovieCard(movie) {
                             <span>${release_date.split("-")[0]}</span>
                         </div>
                         <div class="movie-info">
-                            <img src="assets/HD tag.png" alt="HD resolution">
+                            <img src="../assets/HD tag.png" alt="HD resolution">
                             <div class="time-ratings">
                                 <div class="time">
-                                    <img src="assets/clock icon.png" alt="movie length">
+                                    <img src="../assets/clock-icon.png" alt="movie length">
                                     <span>120min</span>
                                 </div>
                                 <div class="time">
-                                    <img src="assets/Star.png" alt="movie length">
+                                    <img src="../assets/Star.png" alt="movie length">
                                     <span>${vote_average.toFixed(1)}</span>
                                 </div>
                             </div>
