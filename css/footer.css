@@ -24,51 +24,23 @@ footer{
     line-height: 60px;
     padding: 2rem 0 1rem;
     letter-spacing: -0.008em;
-    background-color: #090909;
-}
-
-.streamfixSocials{
-    padding: 0 5% 3rem;
-    margin: auto;
     text-align: center;
-    background-color: #00222C;
-    border-radius: 0 0 100px 100px;
-}
-  
-.streamfixSocials h1{
-    font-family: 'Circular Spotify Text';
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 60px;
-    padding: 2rem 0 1rem;
-    letter-spacing: -0.008em;
-    text-align: center;
-    color: #F8F7F7;
     color: #F8F7F7;
 }
 
-.streamfixSocials h1 a{
-    color: #FF00B8;
 .streamfixSocials h1 a{
     color: #FF00B8;
     text-decoration: none;
-    font-family: 'Circular Spotify Text';
     font-family: 'Circular Spotify Text';
 }
 
 .streamfixSocialsButtons{
     width: 90%;
     margin: 0 auto 2.5rem;
-.streamfixSocialsButtons{
-    width: 90%;
-    margin: 0 auto 2.5rem;
 }
 
 .streamfixSocialsButtons a{
-.streamfixSocialsButtons a{
     text-decoration: none;
-    color: #F8F7F7 !important;
-    font-family: 'Circular Spotify Text';
     color: #F8F7F7 !important;
     font-family: 'Circular Spotify Text';
 }
@@ -86,22 +58,8 @@ footer{
     text-align: right;
     margin-right: 20px;
     cursor: pointer;
-.streamfixSocialsButtons button{
-    padding: 15px;
-    border-radius: 50px;
-    background-color: #F8F7F7;
-    color: #090909;
-    font-family: 'Circular Spotify Text';
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0.008em;
-    text-align: right;
-    margin-right: 20px;
-    cursor: pointer;
 }
 
-.streamfixSocialsButtons button img{
 .streamfixSocialsButtons button img{
     width: 20px;
     margin: 0 15px -3px 0;
@@ -117,28 +75,8 @@ footer{
 
 .noIconButton{
     height: auto;
-    margin: 0 15px -3px 0;
 }
 
-.appleIconButton{
-    padding: 13px 15px !important;
-}
-
-.appleIcon{
-    width: 24px !important;
-}
-
-.noIconButton{
-    height: auto;
-}
-
-.streamfixSocialsButtons button:hover{
-    background-color: transparent;
-    border: 2px solid #F8F7F7;
-    color: #F8F7F7;
-}
-
-.regionSocials{
 .streamfixSocialsButtons button:hover{
     background-color: transparent;
     border: 2px solid #F8F7F7;
@@ -152,16 +90,11 @@ footer{
 
 .region{
     flex-basis: 18%;
-    flex-basis: 18%;
     display: flex;
-    gap: 5px;
     gap: 5px;
 }
 
 .region img{
-    width: 30px;
-    height: 30px;
-    margin-top: 12px;
     width: 30px;
     height: 30px;
     margin-top: 12px;
@@ -172,17 +105,11 @@ select{
     margin-left: -5px;
     font-size: 15px;
     background: #00222C;
-    font-family: 'Circular Spotify Text';
-    margin-left: -5px;
-    font-size: 15px;
-    background: #00222C;
     border: none;
-    color: #F8F7F7;
     color: #F8F7F7;
     padding: 0.3rem;
 }
 
-.socialIcons{
 .socialIcons{
     display: flex;
     gap: 25px;
@@ -192,17 +119,8 @@ select{
 .socialIcons img{
     padding: 2px;
     height: 30px;
-    gap: 25px;
-    margin-top: 10px;
 }
 
-.socialIcons img{
-    padding: 2px;
-    height: 30px;
-}
-
-.socialIcons img:hover{
-    border: 1px solid #F8F7F7;
 .socialIcons img:hover{
     border: 1px solid #F8F7F7;
     border-radius: 50%;
@@ -210,29 +128,15 @@ select{
 
 .logoLinks{
     padding: 0 5%;
-.logoLinks{
-    padding: 0 5%;
     display: flex;
-    justify-content: space-between;
-    margin: 50px auto 0;
     justify-content: space-between;
     margin: 50px auto 0;
 }
 
 .links{
     flex-basis: 70%;
-.links{
-    flex-basis: 70%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.links a{
-    width: 22%;
-    margin: 0 auto 8px;
-    font-family: 'Circular Spotify Text';
-    font-size: 15px;
     flex-wrap: wrap;
 }
 
@@ -245,31 +149,19 @@ select{
     line-height: 24px;
     text-align: left;
     color: #F8F7F7;
-    text-decoration: none;
-    text-align: left;
-    color: #F8F7F7;
 }
 
-.copyright{
-    padding: 10px 5% 3rem;
 .copyright{
     padding: 10px 5% 3rem;
     display: flex;
     gap: 10px;
-    gap: 10px;
 }
 
 .copyright img{
     width: 24px;
     height: 24px;
-.copyright img{
-    width: 24px;
-    height: 24px;
 }
 
-.copyright p{
-    font-family: 'Circular Spotify Text';
-    font-size: 18px;
 .copyright p{
     font-family: 'Circular Spotify Text';
     font-size: 18px;
@@ -277,21 +169,8 @@ select{
     line-height: 23.44px;
     text-align: left;
     color: #F8F7F7;
-    line-height: 23.44px;
-    text-align: left;
-    color: #F8F7F7;
 }
 
-@media(max-width:960px){
-    .streamfixSocialsButtons{
-        width: 100%;
-    }
-}
-
-
-@media(max-width:900px){
-    .streamfixSocials{
-        border-radius: 0 0 50px 50px;
 @media(max-width:960px){
     .streamfixSocialsButtons{
         width: 100%;
@@ -308,10 +187,6 @@ select{
         font-size: 25px;
         line-height: 40px;
         padding: 2rem 0 1rem;
-    .streamfixSocials h1{
-        font-size: 25px;
-        line-height: 40px;
-        padding: 2rem 0 1rem;
     }
 
     .streamfixSocialsButtons{
@@ -323,39 +198,10 @@ select{
     
     .streamfixSocialsButtons button{
         margin-right: 0;
-
-    .streamfixSocialsButtons{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .streamfixSocialsButtons button{
-        margin-right: 0;
     }
 
-    .logoLinks{
     .logoLinks{
         flex-direction: column;
-        gap: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .links a{
-        font-size: 13px;
-        line-height: 18px;
-    }
-}
-
-@media(max-width:600px){
-    .streamfixSocials h1{
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .streamfixSocialsButtons button{
-        font-size: 11px;
         gap: 1.5rem;
         margin-bottom: 1rem;
     }
@@ -378,20 +224,7 @@ select{
 
     .socialIcons{
         gap: 15px;
-
-    .socialIcons{
-        gap: 15px;
     }
-    
-    .socialIcons img{
-        height: 20px;
-    }
-
-    .regionSocials{
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-        padding-bottom: 2rem !important;
     
     .socialIcons img{
         height: 20px;
@@ -406,29 +239,14 @@ select{
 
     .links a{
         width: 45%;
-
-    .links a{
-        width: 45%;
     }
-
-    .copyright img{
-        width: 22px;
-        height: 22px;
 
     .copyright img{
         width: 22px;
         height: 22px;
     }
     
-    .copyright p{
-        font-size: 15px;
     .copyright p{
         font-size: 15px;
     }
 }
-
-
-
-
-
-/*Sign in Footer CSS*/
