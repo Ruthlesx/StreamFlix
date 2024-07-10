@@ -1,5 +1,15 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
 .topTrending{
-    margin: 10rem 5% 0;
+    margin: 10rem auto 4rem;
+    width: 90%;
+}
+
+.nigerianShows{
+    margin: 2rem auto 0 !important;
 }
 
 .topTrending h1{
@@ -54,18 +64,20 @@
 }
 
 .trendingForeign{
-    width: 100%;
-    padding: 4rem 5% 2rem;
+    width: 90%;
+    margin: auto;
+    padding: 0 0 2rem;
 }
 
 .foreignShows{
+    width: 100%;
     display: flex;
     gap: 1%;
-    margin-bottom: 2rem;
+    margin: 0 auto;
 }
 
 .foreignShow{
-    flex-basis: 25%;
+    width: 29%;
 }
 
 .foreignShow img{
@@ -74,21 +86,21 @@
 }
 
 .playVideo{
-    flex-basis: 65%;
+    width: 70%;
     height: auto;
     background-color: #454545;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .playVideo img{
-    width: 57px;
-    height: 48px;
-    margin-top: 160px;
+    width: 40px;
+    height: 34px;
 }
 
 .trendingForeignText{
-    width: 90%;
+    width: 100%;
 }
 
 .trendingForeignText p{
@@ -100,12 +112,28 @@
 }
 
 .seeMore{
+    margin-top: -1rem;
     font-size: 25px;
     font-weight: 700;
     line-height: 36.33px;
     text-align: left;
     color: #FFFFFF;
-    padding: 3rem 7% 5rem;
+    padding: 1rem 5% 5rem;
+}
+
+@media(max-width:1210px){
+    .trending button{
+        padding: 10px 15px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        margin: 15px auto 25px;
+    }
+    
+    .trending button img{
+        margin: auto 8px auto 0;
+        width: 10px;
+    }
 }
 
 @media(max-width:1000px){
@@ -113,18 +141,16 @@
         width: 20%;
     }
 
-    .foreignShow{
-        flex-basis: 35%;
-        margin: auto;
+    .trending button{
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 21.76px;
     }
     
-    .foreignShow img{
-        width: 100%;
-    }
-
-    .playVideo{
-        flex-basis: 63%;
-        margin: auto;
+    .trending button img{
+        margin: auto 10px auto 0;
+        width: 12px;
     }
 
     .topTrending{
@@ -151,6 +177,10 @@
         margin: 6rem 5% 0;
     }
 
+    .topTrendingShows{
+        width: 90% !important;
+    }
+
     .trendingForeignText p{
         font-size: 16px;
         font-weight: 600;
@@ -171,12 +201,28 @@
     }
 
     .playVideo{
-        width: 100%;
+        width: 90%;
+        margin-top: -2px;
+    }
+    
+    .playVideo img{
+        margin: 100px 0;
+    }
+
+    .trendingForeignText{
+        width: 90%;
+        margin: auto;
+    }
+
+    .trendingForeignText p{
+        font-size: 16px;
+        line-height: 30px;
     }
     
     .seeMore{
         font-size: 16px;
         font-weight: 600;
+        padding: 1rem 10% 5rem;
     }
 
     

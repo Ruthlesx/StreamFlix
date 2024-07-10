@@ -58,6 +58,7 @@ footer{
     text-align: right;
     margin-right: 20px;
     cursor: pointer;
+    border: 2px solid #F8F7F7;
 }
 
 .streamfixSocialsButtons button img{
@@ -79,7 +80,6 @@ footer{
 
 .streamfixSocialsButtons button:hover{
     background-color: transparent;
-    border: 2px solid #F8F7F7;
     color: #F8F7F7;
 }
 
@@ -119,6 +119,7 @@ select{
 .socialIcons img{
     padding: 2px;
     height: 30px;
+    border: 1px solid transparent;
 }
 
 .socialIcons img:hover{
@@ -140,6 +141,13 @@ select{
     flex-wrap: wrap;
 }
 
+.footerLinks{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .links a{
     width: 22%;
     margin: 0 auto 8px;
@@ -147,6 +155,17 @@ select{
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
+    text-align: left;
+    color: #F8F7F7;
+}
+
+.footerLinks a{
+    width: 22%;
+    margin: 0 auto;
+    font-family: 'Circular Spotify Text';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2px;
     text-align: left;
     color: #F8F7F7;
 }
@@ -169,6 +188,27 @@ select{
     line-height: 23.44px;
     text-align: left;
     color: #F8F7F7;
+}
+
+.copyrights{
+    padding: 10px 5% 3rem;
+    display: flex;
+    gap: 10px;
+}
+
+.copyrights img{
+    width: 24px;
+    height: 24px;
+}
+
+.copyrights p{
+    font-family: 'Circular Spotify Text';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color: #F8F7F7;
+    margin-top: 2px;
 }
 
 @media(max-width:960px){
@@ -210,6 +250,10 @@ select{
         font-size: 13px;
         line-height: 18px;
     }
+
+    .footerLinks a{
+        font-size: 13px;
+    }
 }
 
 @media(max-width:600px){
@@ -241,12 +285,25 @@ select{
         width: 45%;
     }
 
+    .footerLinks a{
+        width: 45%;
+    }
+
     .copyright img{
         width: 22px;
         height: 22px;
     }
     
     .copyright p{
+        font-size: 15px;
+    }
+
+    .copyrights img{
+        width: 22px;
+        height: 22px;
+    }
+    
+    .copyrights p{
         font-size: 15px;
     }
 }
