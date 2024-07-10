@@ -1,24 +1,3 @@
-:root{
-    --clr-100dark: #090909;
-    --clr-90dark: #121010;
-    --clr-80dark: #2E2D2D;
-    --clr-grey: #454545;
-    --clr-ash: #CCCCCC;
-    --clr-80light: #CFCFCF;
-    --clr-90light: #F8F7F7;
-    --clr-magenta: #ff00b3;
-    --clr-armygreen: #00222C;
-}
-
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-}
-
 @font-face {
     font-family: 'Circular Spotify Text';
     src: url('../assets/fonts/circular-spotify-text-font/CircularSpotifyText-Book.otf');
@@ -27,230 +6,247 @@
 
 footer{
     width: 100%;
-    bottom: 0;
-    margin-top: 12rem;
+    background-color: #090909;
 }
 
-.footer-one{
-    background: var(--clr-armygreen);
-    padding: 2rem 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-}
-
-.footer-one h2{
+.streamfixSocials{
+    padding: 0 5% 3rem;
+    margin: auto;
     text-align: center;
-    font-size: 30px;
-    color: var(--clr-90light);
+    background-color: #00222C;
+    border-radius: 0 0 100px 100px;
+}
+  
+.streamfixSocials h1{
+    font-family: 'Circular Spotify Text';
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 2rem 0 1rem;
+    letter-spacing: -0.008em;
+    text-align: center;
+    color: #F8F7F7;
 }
 
-.footer-one h2 a{
-    color: var(--clr-magenta);
+.streamfixSocials h1 a{
+    color: #FF00B8;
     text-decoration: none;
+    font-family: 'Circular Spotify Text';
 }
 
-.footer-one h2 a:hover{
-    text-decoration: underline;
+.streamfixSocialsButtons{
+    width: 90%;
+    margin: 0 auto 2.5rem;
 }
 
-.footer-buttons{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2rem;
-    align-items: center;
-}
-
-.android a{
-    display: flex;
-    background: var(--clr-90light);
-    padding: 8px 13px;
-    border-radius: 40px;
-    align-items: center;
-    gap: 0.5rem;
+.streamfixSocialsButtons a{
     text-decoration: none;
-    color: var(--clr-100dark);
+    color: #F8F7F7 !important;
+    font-family: 'Circular Spotify Text';
 }
 
-.android a:hover{
-    background: transparent;
-    border: 2px solid var(--clr-90light);
-    color: var(--clr-90light);
+.streamfixSocialsButtons button{
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #F8F7F7;
+    color: #090909;
+    font-family: 'Circular Spotify Text';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.008em;
+    text-align: right;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
-.footer-buttons p{
-    display: flex;
-    font-size: 13px;
-    gap: 2rem;
-    align-items: center;
-}
-
-.footer-buttons img, .footer-region .socials img{
+.streamfixSocialsButtons button img{
     width: 20px;
+    margin: 0 15px -3px 0;
 }
 
-.footer-region{
+.appleIconButton{
+    padding: 13px 15px !important;
+}
+
+.appleIcon{
+    width: 24px !important;
+}
+
+.noIconButton{
+    height: auto;
+}
+
+.streamfixSocialsButtons button:hover{
+    background-color: transparent;
+    border: 2px solid #F8F7F7;
+    color: #F8F7F7;
+}
+
+.regionSocials{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .region{
+    flex-basis: 18%;
     display: flex;
-    align-items: end;
+    gap: 5px;
 }
 
 .region img{
-    width: 23px;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
 }
 
 select{
-    background: var(--clr-armygreen);
+    font-family: 'Circular Spotify Text';
+    margin-left: -5px;
+    font-size: 15px;
+    background: #00222C;
     border: none;
-    color: var(--clr-90light);
+    color: #F8F7F7;
     padding: 0.3rem;
 }
 
-.socials{
+.socialIcons{
     display: flex;
-    gap: 1rem;
+    gap: 25px;
+    margin-top: 10px;
 }
 
-.socials img:hover{
-    border: 1px solid var(--clr-90light);
-    padding: 1px;
+.socialIcons img{
+    padding: 2px;
+    height: 30px;
+}
+
+.socialIcons img:hover{
+    border: 1px solid #F8F7F7;
     border-radius: 50%;
 }
 
-.footer-two{
-    background: var(--clr-100dark);
-    padding: 2rem 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.footer-contact{
+.logoLinks{
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
-    font-size: 16px;
-    font-weight: 400;
+    margin: 50px auto 0;
 }
 
-.footer-contact img{
-    width: 215px;
-    height: 73.44px;
-    margin: 0;
-}
-
-.contact-a{
+.links{
+    flex-basis: 70%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.links a{
+    width: 22%;
+    margin: 0 auto 8px;
+    font-family: 'Circular Spotify Text';
+    font-size: 15px;
+    font-weight: 400;
     line-height: 24px;
+    text-align: left;
+    color: #F8F7F7;
 }
 
-.footer-contact a{
-    color: var(--clr-90light);
-    font-size: 12px;
-    text-decoration: none;
-    margin: 0;
-}
-
-.footer-contact a:hover{
-    text-decoration: underline;
-}
-
-.footer-text{
+.copyright{
+    padding: 10px 5% 3rem;
     display: flex;
-    align-items: center;
-    gap: 0.3rem;
+    gap: 10px;
 }
 
-.footer-text img{
-    width: 20px;
+.copyright img{
+    width: 24px;
+    height: 24px;
 }
 
-.footer-two p{
-    color: var(--clr-90light);
-    font-size: 12px;
+.copyright p{
+    font-family: 'Circular Spotify Text';
+    font-size: 18px;
     font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color: #F8F7F7;
 }
 
-@media (max-width:800px){
-
-    .signIn p{
-        line-height: 30px;
-        padding-top: 8px;
+@media(max-width:960px){
+    .streamfixSocialsButtons{
+        width: 100%;
     }
+}
 
-    form{
-        width: 80%;
-        gap: 2rem;
-    }
-    
-    label{
-        font-size: 14px;
+
+@media(max-width:900px){
+    .streamfixSocials{
+        border-radius: 0 0 50px 50px;
     }
 
-    form a{
-        font-size: 12px;
+    .streamfixSocials h1{
+        font-size: 25px;
+        line-height: 40px;
+        padding: 2rem 0 1rem;
     }
 
-    .signUp p, .signUp a{
-    font-size: 13px;
-    }
-
-    .footer-one h2{
-        font-size: 24px;
-    }
-
-    .footer-buttons{
-        flex-direction: column;
-    }
-
-    .footer-buttons p{
-        font-size: 11px;
-    }
-    
-    .footer-buttons img, .footer-region .socials img{
-        width: 13px;
-    }
-    
-    .region img{
-        width: 20px;
-    }
-    
-    .socials{
-        gap: 0.5rem;
-    }
-
-    .footer-contact{
+    .streamfixSocialsButtons{
+        display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        justify-content: center;
+        gap: 20px;
     }
     
-    .footer-contact img{
-        width: 120px;
-        height: 63.44px;
+    .streamfixSocialsButtons button{
+        margin-right: 0;
     }
-    
-    .contact-a{
-        line-height: 20px;
+
+    .logoLinks{
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
     }
-    
-    .footer-contact a{
+
+    .links a{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width:600px){
+    .streamfixSocials h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .streamfixSocialsButtons button{
         font-size: 11px;
     }
-    
-    .footer-text img{
-        width: 13px;
+
+    .socialIcons{
+        gap: 15px;
     }
     
-    .footer-two p{
-        font-size: 11px;
+    .socialIcons img{
+        height: 20px;
+    }
+
+    .regionSocials{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 2rem !important;
+    }
+
+    .links a{
+        width: 45%;
+    }
+
+    .copyright img{
+        width: 22px;
+        height: 22px;
+    }
+    
+    .copyright p{
+        font-size: 15px;
     }
 }

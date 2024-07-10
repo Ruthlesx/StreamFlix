@@ -2,35 +2,37 @@
     width: 90%;
     margin: auto;
     display: flex;
-}
-
-.heroText{
+    flex-direction: column;
+    
+  }
+  
+  .heroText{
     flex-basis: 34%;
     margin: auto;
     padding: 30px 0;
-}
-
-.heroText h1{
+  }
+  
+  .heroText h1{
     font-size: 55px;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: left;
     color: #FF00B8;
-}
-
-.heroText h3{
+  }
+  
+  .heroText h3{
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 70px;
     text-align: left;
     color: #F8F7F7;
-}
-
-.heroText h3 span{
+  }
+  
+  .heroText h3 span{
     color: #cccccc;
-}
-
-.heroText button{
+  }
+  
+  .heroText button{
     padding: 10px 20px;
     background-color: transparent;
     border: 1.4px solid #FF00B8;
@@ -40,22 +42,54 @@
     font-weight: 700;
     line-height: 21.76px;
     text-align: center;
-}
-
-.heroText button img{
+  }
+  
+  .heroText button img{
     margin: auto 10px auto 0;
-}
-
-.heroImages{
+  }
+  
+  .heroImages{
     display: flex;
     flex-basis: 70%;
-}
-
-.heroImages img{
+    
+  }
+  
+  .heroImages img{
     width: 100%;
-}
-
-@media(max-width:1000px){
+    height: auto;
+   
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .banner-image.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  
+  
+  @media(max-width:1000px){
     .heroText h1{
         font-size: 40px;
         line-height: 50.31px;
@@ -66,17 +100,17 @@
         line-height: 36.88px;
         margin-bottom: 40px;
     }
-}
-
-@media(max-width:800px){
+  }
+  
+  @media(max-width:800px){
     .heroText{
         flex-basis: 50%;
     }
-
+  
     .heroImages{
         flex-basis: 50%;
     }
-
+  
     .heroText h1{
         font-size: 30px;
         line-height: 40px;
@@ -87,21 +121,21 @@
         line-height: 20px;
         margin-bottom: 20px;
     }
-
+  
     .heroText button{
         padding: 5px 10px;
         font-size: 16px;
         font-weight: 600;
         line-height: 21.76px;
     }
-
+  
     .heroText button img{
         margin: auto 10px auto 0;
         width: 12px;
     }
-}
-
-@media(max-width:500px){
+  }
+  
+  @media(max-width:500px){
     .heroSection{
         width: 100%;
         padding: 2rem 5%;
@@ -110,8 +144,8 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+  
     .heroImages{
         display: none;
     }
-}
+  }
