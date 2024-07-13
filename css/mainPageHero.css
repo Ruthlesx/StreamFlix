@@ -1,4 +1,6 @@
 .heroSection{
+  position: relative;
+  margin-top: 10px;
     width: 90%;
     margin: auto;
     display: flex;
@@ -51,12 +53,13 @@
   .heroImages{
     display: flex;
     flex-basis: 70%;
-    
+   
   }
   
   .heroImages img{
     width: 100%;
     height: auto;
+   
    
   }
   
