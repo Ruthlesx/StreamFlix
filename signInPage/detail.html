@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreamFix</title>
+    
     <link rel="icon" type="image/x-icon" href="../assets/images/3d cinema reel.png">
 
     <!--Importing Roboto Font Family-->
@@ -19,18 +19,17 @@
     <!--Linking CSS files-->
    
     
-    <link rel="stylesheet" href="../css/mainPageHero.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
-    <link rel="stylesheet" href="../css/mainPageUpcoming.css">
-    <link rel="stylesheet" href="../css/mainPageNewlySuggested.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/upcomingMovies.css">
+    <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/aboutSponsored.css">
-    <link rel="stylesheet" href="../css/mainPageFooter.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <!--Linking JS files-->
-    <script src="../JavaScript/nav.js"></script>
+   
     <script src="../JavaScript/global.js" type="module" defer></script>
-    
-    <script src="../JavaScript/index.js" type="module" defer></script> 
+    <script src="../JavaScript/movie-detail.js" type="module" defer></script>
+    <script src="../JavaScript/sidebar.js" type="module"> </script> 
     
    
    
@@ -53,11 +52,11 @@
             
             <div class="desktop" id="responsiveMenu">
                 <ul>
-                    <a href="./real-mainpage.html"><li>Home</li></a>
+                    <a href="./real-mainpage.html" class="active"><li>Home</li></a>
                     <a href="./movies.html"><li>Movies</li></a>
                     <a href="./tvShows.html"><li>TV Shows</li></a>
-                    <a href="real-mainpage.html" class="active"><li>Web Series</li></a>
-                    <a href="real-mainpage.html"><li>Premium</li></a>
+                    <a href="#"><li>Web Series</li></a>
+                    <a href="#"><li>Premium</li></a>
                 </ul>
 
                 <ul class="search-header">
@@ -67,7 +66,7 @@
             
                       <input type="text" name="search" aria-label="search movies" placeholder="Search any movies..." autocomplete="off" class="search-field " search-field>
             
-                      <img src="../assets/search logo.png" width="24px" height="24px" alt="search" class="leading-icon"/>
+                      <img src="../assets/search logo.png" width="24px" height="24px" alt="search" class="leading-icon"></img>
                      
                     </div>
             
@@ -145,6 +144,11 @@
 
         
         <section class="heroSection">
+
+
+   
+
+
            <!-- <div class="heroText">
                 <h1>STREAMFIX</h1>
                 <h3>Unlimited Entertainment: <span>Movies, TV Shows & More</span></h3>
@@ -153,19 +157,103 @@
 
             <div class="heroImages">
                 <img src="../assets/heroImage.jpg" alt="">
-            </div>
+            </div> -->
         
+
+           <!-- <div class="movie-detail">
+                <div class="backdrop-image" style="background-image: url(../assets/Avatar.jpg)"></div>
+
+                <figure class="poster-box movie-poster">
+                    <img src="../assets/moviesHeroImage.jpg" alt="Dumb Money" class="img-cover">
+                </figure>
+
+                <div class="detail-box">
+
+                    <div class="detail-content">
+                        <h1 class="heading">Dumb Money In Paris</h1>
+
+                        <div class="meta-list">
+
+                            <div class="meta-item">
+                                <img src="../assets/Star.png" width="20" height="20" alt="rating">
+
+                                <span class="span">8.4</span>
+
+                                <div class="separator"></div>
+
+                                <div class="meta-item">162m</div>
+
+                                <div class="separator"></div>
+
+                                <div class="meta-item">2022</div>
+
+                                <div class="meta-item card-badge">PG-13</div>
+                            </div>
+
+
+                        </div>
+
+                        <p class="genre">Action, Adventure</p>
+
+                        <p class="overview">Two dumb indian men comes to america and believe they
+                            can steal all the gold, Watch their adventures As they weigh the 
+                            hills and pitfalls of corporate america
+                        </p>
+
+                        <ul class="detail-list">
+
+                            <div class="list-item">
+                                <p class="list-name">Starring</p>
+
+                                <p>
+                                    Arnold schwazzneger, Gabriel Homes, Jackie Chan, Gaberriella Union,
+                                    Steve Nocee, Alexander Steinberg
+                                </p>
+                            </div>
+
+
+                            <div class="list-item">
+                                <p class="list-name">Directed</p>
+
+                                <p>
+                                    Michealangelo
+                                </p>
+                            </div>
+
+                        </ul>
+
+
+                    </div>
+
+                    <div class="title-wrapper">
+                        <h3 class="title-large">Trailers and Clips</h3>
+                    </div>
+
+                    <div class="slider-list">
+                        <div class="slider-inner">
+
+                            <div class="video-card"></div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div> -->
+
 
         <section class="upcoming">
             <div class="movies">
-                <h2>UPCOMING MOVIES</h2>
+                <h2>Movie Details</h2>
                 <div class="upcoming-buttons">
                     <a href="../signUpPage/signUp.html"><button class="activeButton">Movies</button></a>
                     <a href="../signUpPage/signUp.html"><button>TVShows</button></a>
                     <a href="../signUpPage/signUp.html"><button>Animation</button></a>
                 </div>
             </div>
-            <div class="upcoming-cards">
+          <!--  <div class="upcoming-cards">
                 <div class="card">
                     <img class="card-image" src="../assets/The American.jpg" alt="The Amerian movie">
                     <div class="card-info">
@@ -303,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section> -->
 
 

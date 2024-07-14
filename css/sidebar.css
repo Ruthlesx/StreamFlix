@@ -40,25 +40,20 @@
   --transition-long: 500ms ease;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; /* Ensure 'Roboto' is available */
-}
+
 
 body {
   background-color: var(--clr-100dark);
+ 
 }
 
 header {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 1rem;
 }
 
+/* Before Sign in Navbar */
 nav {
   width: 100%;
   display: flex;
@@ -262,15 +257,16 @@ button:hover {
 
 .sidebar {
   position: absolute;
-  background-color: var(--background);
-  top: 96px;
+  background-color: #fff;
+
+  top: 296px;
+  
   bottom: 0;
   left: 0;
   max-width: 280px;
   width: 100%;
-  border-block-start: 1px solid var(--banner-background);
   overflow-y: overlay;
-  z-index: 4;
+  z-index: 3;
   visibility: hidden;
   transition: var(--transition-short);
 }
@@ -294,6 +290,7 @@ button:hover {
 
 .sidebar::-webkit-scrollbar-thumb {
   background-color: transparent;
+  color: black;
 }
 
 .sidebar:hover::-webkit-scrollbar-thumb {
@@ -328,6 +325,45 @@ button:hover {
   opacity: 0.5;
   pointer-events: all;
 }
+
+
+/*After sign-in Navbar*/
+
+.moviesNav{
+  width: 95%;
+}
+
+.movieMobile{
+  display: flex;
+  gap: 0;
+}
+
+.bar{
+  margin: auto 0;
+}
+
+.bar img{
+  cursor: pointer;
+  width: 50px;
+}
+
+.moviesButton{
+  display: flex;
+  gap: 25px;
+  margin: auto;
+}
+
+.moviesButton img{
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+main{
+  width: 100%;
+  margin-top: 100px;
+}
+
 
 @media (max-width: 1234px) {
   ul {
@@ -384,4 +420,38 @@ button:hover {
   .button button {
     padding: 10px 70px;
   }
+
+/*After sign in Responsive Navbar*/
+
+.moviesHeader{
+  padding-bottom: 1.5rem;
 }
+
+.moviesNav{
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.movieMobile .logo {
+  width: 120px;
+}
+
+.moviesDesktop{
+  display: flex !important;
+  justify-content: right;
+  margin: 20px 20px 0 0;
+}
+
+.moviesButton{
+  margin: auto 0 !important;
+  gap: 15px;
+}
+
+.moviesButton img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+}
+
