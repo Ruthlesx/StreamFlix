@@ -61,6 +61,10 @@ nav {
   justify-content: space-between;
 }
 
+.active{
+  color: #ff00b3;
+}
+
 .logo {
   flex-basis: 5%;
   padding-top: 20px;

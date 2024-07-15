@@ -11,6 +11,11 @@
     transition: ease 0.3s;
 }
 
+.TVsidebar{
+    margin-top: -80px !important;
+    padding: 40px 20px 15px;;
+}
+
 .sidebarMenus a{
     margin: 0 !important;
     font-size: 18px;

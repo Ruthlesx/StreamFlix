@@ -6,6 +6,9 @@
     <title>StreamFix</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/3d cinema reel.png">
 
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/c836f0ce7a.js" crossorigin="anonymous"></script>
+
     <!--Importing Roboto Font Family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +21,14 @@
     
     <!--Linking CSS files-->
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/sideBarMenus.css">
     <link rel="stylesheet" href="../css/movies.css">
     <link rel="stylesheet" href="../css/upcomingMovies.css">
     <link rel="stylesheet" href="../css/newlySuggested.css">
     <link rel="stylesheet" href="../css/footer.css">
     
 </head>
+
 <body>
     <header class="moviesHeader">
 
@@ -42,7 +47,7 @@
             
             <div class="desktop moviesDesktop" id="responsiveMenu">
                 <ul class="moviesUl">
-                    <a href="../signInPage/real-mainpage.html"><li>Home</li></a>
+                    <a href="./real-mainpage.html"><li>Home</li></a>
                     <a href="./movies.html" class="active"><li>Movies</li></a>
                     <a href="./tvShows.html"><li>TV Shows</li></a>
                     <a href="./real-mainpage.html"><li>Web Series</li></a>
@@ -61,6 +66,14 @@
     </header>
 
     <main>
+
+        <div class="sidebarMenus" id="sidebarMenus">
+            <a href="../signInPage/movies.html" class="sidebarMenu"><i class="fa-regular fa-house"></i>Home</a>
+            <a href="../signInPage/movies.html" class="sidebarMenu"><i class="fa-solid fa-heart"></i>Favorites</a>
+            <a href="../signInPage/movies.html" class="sidebarMenu"><i class="fa-solid fa-arrow-trend-up"></i>Trending</a>
+            <a href="../signInPage/movies.html" class="sidebarMenu"><i class="fa-regular fa-clock"></i>Recently Released</a>
+            <a href="../signInPage/movies.html" class="sidebarMenu noBorder"><i class="fa-solid fa-gear"></i>Settings</a>
+        </div>
 
         <section class="moviesHeroSection">
             <div class="moviesHeroText">
@@ -366,7 +379,7 @@
 
 
     <!--Linking JS files-->
-    <script src="../JavaScript/nav.js"></script>
     <script src="../JavaScript/index.js"></script>
+    <script src="../JavaScript/sidebarMenus.js"></script>
 </body>
 </html>
